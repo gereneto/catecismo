@@ -1,0 +1,42 @@
+{
+ "min": 1,
+ "max": 184,
+ "blocos": [
+  {
+   "file": "prologo.json",
+   "de": 1,
+   "ate": 25,
+   "titulo": "Prólogo"
+  },
+  {
+   "file": "p1s1c1.json",
+   "de": 26,
+   "ate": 49,
+   "titulo": "O homem é «capaz» de Deus"
+  },
+  {
+   "file": "p1s1c2a1.json",
+   "de": 50,
+   "ate": 73,
+   "titulo": "A Revelação de Deus"
+  },
+  {
+   "file": "p1s1c2a2.json",
+   "de": 74,
+   "ate": 100,
+   "titulo": "A transmissão da Revelação divina"
+  },
+  {
+   "file": "p1s1c2a3.json",
+   "de": 101,
+   "ate": 141,
+   "titulo": "A Sagrada Escritura"
+  },
+  {
+   "file": "p1s1c3.json",
+   "de": 142,
+   "ate": 184,
+   "titulo": "A resposta do homem a Deus"
+  }
+ ]
+}

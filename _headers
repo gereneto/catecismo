@@ -1,0 +1,4 @@
+/dados/*
+  Cache-Control: public, max-age=3600, must-revalidate
+/estilo.css
+  Cache-Control: public, max-age=3600, must-revalidate

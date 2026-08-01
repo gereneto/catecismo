@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1319">
+<title>Catecismo da Igreja Católica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&family=Newsreader:ital,opsz,wght@0,6..72,200..400;1,6..72,200..300&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<header class="bar">
+  <span class="mark">Catecismo da Igreja Católica</span>
+  <span class="go">
+    <label for="jump">Ponto</label>
+    <input id="jump" type="number" inputmode="numeric" min="1" max="2865" placeholder="1">
+  </span>
+</header>
+
+<main id="page" tabindex="-1"></main>
+
+<nav class="nav" id="nav"></nav>
+
+<script>
+/* ===========================================================
+   Catecismo da Igreja Católica — leitor
+   Texto: vatican.va (versão portuguesa), com ajustes de
+   português de Portugal para o Brasil.
+   Os pontos ficam em dados/*.json, carregados sob demanda.
+   =========================================================== */
+
+const page = document.getElementById("page");
+const nav  = document.getElementById("nav");
+const jump = document.getElementById("jump");
+
+let MAN = null;                 // manifesto
+const CACHE = new Map();        // arquivo -> {n: ponto}
+const PEND  = new Map();        // arquivo -> promessa em curso
+
+const num = () => {
+  const n = parseInt(location.hash.replace(/[^0-9]/g, ""), 10);
+  return Number.isFinite(n) ? n : 1;
+};
+
+const blocoDe = n => MAN && MAN.blocos.find(b => n >= b.de && n <= b.ate);
+
+function carregar(bloco){
+  if (!bloco) return Promise.resolve(null);
+  if (CACHE.has(bloco.file)) return Promise.resolve(CACHE.get(bloco.file));
+  if (PEND.has(bloco.file))  return PEND.get(bloco.file);
+  const p = fetch("dados/" + bloco.file)
+    .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(d => { CACHE.set(bloco.file, d); PEND.delete(bloco.file); return d; })
+    .catch(e => { PEND.delete(bloco.file); throw e; });
+  PEND.set(bloco.file, p);
+  return p;
+}
+
+/* pré-carrega o bloco vizinho, para virar de página sem espera */
+function adiantar(n){
+  const b = blocoDe(n);
+  if (!b) return;
+  if (n >= b.ate - 1) carregar(blocoDe(b.ate + 1));
+  if (n <= b.de  + 1) carregar(blocoDe(b.de  - 1));
+}
+
+function aviso(html){
+  page.innerHTML = `<div class="miss">${html}</div>`;
+  nav.innerHTML = "";
+}
+
+function pintar(n, d){
+  page.classList.remove("fade"); void page.offsetWidth; page.classList.add("fade");
+
+  const trail = d.trail.map((t,i) =>
+    `<span class="${i === d.trail.length-1 ? 'here' : ''}">${t}</span>`).join("");
+
+  const notas = d.notes.length ? `
+    <section class="notes">
+      <h2>Referências</h2>
+      ${d.notes.map(nt => `
+        <div class="note" id="nota-${nt.n}">
+          <div class="n">${nt.n}</div>
+          <div>
+            <p class="src">${nt.fonte}</p>
+            ${nt.txt ? `<div class="quoted">${nt.txt}</div>` : ``}
+            ${nt.tag ? `<span class="tag">${nt.tag}</span>` : ``}
+          </div>
+        </div>`).join("")}
+    </section>` : "";
+
+  page.innerHTML = `
+    <div class="trail">${trail}</div>
+    <div class="numeral">${n}</div>
+    <div class="rule"></div>
+    <div class="body">${d.body}</div>
+    ${notas}`;
+
+  const prev = n > MAN.min ? n - 1 : null;
+  const next = n < MAN.max ? n + 1 : null;
+  nav.innerHTML =
+    `<a class="prev" href="#${prev ?? n}" ${prev ? "" : 'aria-disabled="true" tabindex="-1"'}>
+       <span class="dir">Anterior</span><span class="num">${prev ?? "—"}</span></a>
+     <a class="next" href="#${next ?? n}" ${next ? "" : 'aria-disabled="true" tabindex="-1"'}>
+       <span class="dir">Próximo</span><span class="num">${next ?? "—"}</span></a>`;
+
+  jump.value = n;
+  document.title = `Catecismo · ${n}`;
+  window.scrollTo(0, 0);
+}
+
+let pedido = 0;
+async function render(){
+  const n = num();
+  const meu = ++pedido;                  // evita corrida entre navegações rápidas
+  document.title = `Catecismo · ${n}`;
+  jump.value = n;
+
+  if (!MAN) {
+    try { MAN = await fetch("dados/manifesto.json").then(r => r.json()); }
+    catch { return aviso(`<p><strong>Não foi possível carregar o Catecismo.</strong></p>
+      <p>Verifique a conexão e recarregue a página.</p>`); }
+  }
+
+  const b = blocoDe(n);
+  if (!b) {
+    return aviso(`<p><strong>O ponto ${n} ainda não está neste site.</strong></p>
+      <p>Por enquanto estão disponíveis os pontos ${MAN.min} a ${MAN.max}.</p>
+      <p><a href="#${MAN.min}" style="color:var(--brass)">Voltar ao início</a></p>`);
+  }
+
+  let dados;
+  try { dados = await carregar(b); }
+  catch { if (meu === pedido) aviso(`<p><strong>Falha ao carregar esta parte do texto.</strong></p>
+      <p>Verifique a conexão e tente de novo.</p>`); return; }
+
+  if (meu !== pedido) return;            // já pediram outro ponto
+  const d = dados[n];
+  if (!d) return aviso(`<p><strong>O ponto ${n} não foi encontrado.</strong></p>`);
+
+  pintar(n, d);
+  adiantar(n);
+}
+
+/* rolagem até a nota, sem sujar a URL */
+page.addEventListener("click", e => {
+  const a = e.target.closest("a.ref");
+  if (!a) return;
+  e.preventDefault();
+  const el = document.getElementById("nota-" + a.dataset.n);
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+
+jump.addEventListener("change", () => {
+  const v = parseInt(jump.value, 10);
+  if (Number.isFinite(v)) location.hash = String(v);
+});
+jump.addEventListener("keydown", e => { if (e.key === "Enter") jump.blur(); });
+
+const ir = d => {
+  const n = num() + d;
+  if (MAN && n >= MAN.min && n <= MAN.max) location.hash = String(n);
+};
+
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT") return;
+  if (e.key === "ArrowRight") ir(1);
+  if (e.key === "ArrowLeft")  ir(-1);
+});
+
+let sx = 0, sy = 0;
+document.addEventListener("touchstart", e => {
+  sx = e.changedTouches[0].clientX; sy = e.changedTouches[0].clientY;
+}, { passive: true });
+document.addEventListener("touchend", e => {
+  const dx = e.changedTouches[0].clientX - sx;
+  const dy = e.changedTouches[0].clientY - sy;
+  if (Math.abs(dx) < 70 || Math.abs(dx) < Math.abs(dy) * 1.6) return;
+  ir(dx < 0 ? 1 : -1);
+}, { passive: true });
+
+window.addEventListener("hashchange", render);
+if (!location.hash) location.replace("#1"); else render();
+</script>
+</body>
+</html>
