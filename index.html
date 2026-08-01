@@ -47,12 +47,20 @@ const num = () => {
 
 const blocoDe = n => MAN && MAN.blocos.find(b => n >= b.de && n <= b.ate);
 
+/* Busca um arquivo de dados. Se falhar, tenta de novo ignorando o cache
+   do navegador: uma resposta de erro guardada localmente deixaria o leitor
+   preso no aviso de falha até o cache expirar. */
+function buscar(caminho){
+  const ler = init => fetch(caminho, init)
+    .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); });
+  return ler().catch(() => ler({ cache: "reload" }));
+}
+
 function carregar(bloco){
   if (!bloco) return Promise.resolve(null);
   if (CACHE.has(bloco.file)) return Promise.resolve(CACHE.get(bloco.file));
   if (PEND.has(bloco.file))  return PEND.get(bloco.file);
-  const p = fetch("dados/" + bloco.file)
-    .then(r => { if(!r.ok) throw new Error(r.status); return r.json(); })
+  const p = buscar("dados/" + bloco.file)
     .then(d => { CACHE.set(bloco.file, d); PEND.delete(bloco.file); return d; })
     .catch(e => { PEND.delete(bloco.file); throw e; });
   PEND.set(bloco.file, p);
@@ -120,7 +128,7 @@ async function render(){
   jump.value = n;
 
   if (!MAN) {
-    try { MAN = await fetch("dados/manifesto.json").then(r => r.json()); }
+    try { MAN = await buscar("dados/manifesto.json"); }
     catch { return aviso(`<p><strong>Não foi possível carregar o Catecismo.</strong></p>
       <p>Verifique a conexão e recarregue a página.</p>`); }
   }
