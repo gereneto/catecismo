@@ -148,6 +148,55 @@ main{max-width:var(--measure);margin:0 auto;padding:0 1.25rem 9rem}
 .nav .num{font-family:"Newsreader",Georgia,serif;font-size:1.35rem;line-height:1.25;color:var(--brass)}
 .nav .next{align-items:flex-end;text-align:right}
 
+/* ---------- subtítulo dentro do ponto ---------- */
+.subtitulo{
+  font-family:"Newsreader",Georgia,serif;
+  font-weight:300;font-size:1.5rem;line-height:1.28;
+  letter-spacing:-.01em;color:var(--brass);
+  margin:0 0 1.3rem;
+}
+
+/* ---------- abertura de tópico ---------- */
+.abertura{
+  min-height:58vh;
+  display:flex;flex-direction:column;justify-content:center;
+  padding:2rem 0 1rem;
+}
+.abertura .contexto{margin-bottom:2.1rem}
+.abertura .contexto span{
+  display:block;
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:.64rem;line-height:1.75;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--text-faint);
+}
+.abertura .ornato{
+  height:1px;margin-bottom:2.3rem;
+  background:linear-gradient(90deg,var(--brass),var(--brass-dim) 34%,transparent);
+}
+.abertura .rotulo{
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--brass-dim);margin-bottom:.75rem;
+}
+.abertura .titulo{
+  font-family:"Newsreader",Georgia,serif;
+  font-weight:200;line-height:1.14;letter-spacing:-.015em;
+  color:var(--text);
+}
+.abertura .parte    .titulo{font-size:3rem;color:var(--brass)}
+.abertura .secao    .titulo{font-size:2.4rem}
+.abertura .capitulo .titulo{font-size:2.4rem}
+.abertura .artigo   .titulo{font-size:2.1rem}
+.abertura .topico   .titulo{font-size:1.75rem}
+/* o traço que liga dois níveis anunciados na mesma página */
+.abertura .elo{width:2.1rem;height:1px;background:var(--edge);margin:1.8rem 0}
+.abertura .adiante{
+  margin-top:3rem;
+  font-family:"IBM Plex Sans",system-ui,sans-serif;
+  font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--text-faint);
+}
+
 /* ---------- estados ---------- */
 .miss{padding:3rem 0;color:var(--text-dim)}
 .miss strong{color:var(--text);font-weight:500}
@@ -156,6 +205,11 @@ main{max-width:var(--measure);margin:0 auto;padding:0 1.25rem 9rem}
   body{font-size:19px}
   .numeral{font-size:6.4rem}
   main{padding-bottom:8rem}
+  .abertura .parte    .titulo{font-size:3.5rem}
+  .abertura .secao    .titulo{font-size:2.7rem}
+  .abertura .capitulo .titulo{font-size:2.7rem}
+  .abertura .artigo   .titulo{font-size:2.3rem}
+  .abertura .topico   .titulo{font-size:1.9rem}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important}

@@ -45,6 +45,12 @@ const num = () => {
   return Number.isFinite(n) ? n : 1;
 };
 
+/* O endereço "#a27" é a abertura que antecede o ponto 27 — a página que
+   anuncia o tópico que ali começa. "#27" continua a ser o ponto em si. */
+const naAbertura = () => /^#a/i.test(location.hash);
+const temAbertura = n => !!(MAN && MAN.aberturas && MAN.aberturas[n]);
+const enderecoDe = n => (temAbertura(n) ? "#a" : "#") + n;
+
 const blocoDe = n => MAN && MAN.blocos.find(b => n >= b.de && n <= b.ate);
 
 /* Busca um arquivo de dados. Se falhar, tenta de novo ignorando o cache
@@ -80,6 +86,51 @@ function aviso(html){
   nav.innerHTML = "";
 }
 
+/* Os dois botões do rodapé. Cada lado é um destino já resolvido — ponto ou
+   abertura — ou null, quando não há para onde ir. */
+function pintarNav(atras, adiante){
+  const lado = (classe, dir, alvo) => {
+    if (!alvo) return `<a class="${classe}" href="${location.hash || "#1"}"
+       aria-disabled="true" tabindex="-1"><span class="dir">${dir}</span>
+       <span class="num">—</span></a>`;
+    const rotulo = alvo.abertura ? "Abertura" : dir;
+    return `<a class="${classe}" href="${alvo.abertura ? "#a" : "#"}${alvo.n}">
+       <span class="dir">${rotulo}</span><span class="num">${alvo.n}</span></a>`;
+  };
+  nav.innerHTML = lado("prev", "Anterior", atras) + lado("next", "Próximo", adiante);
+}
+
+/* A página que anuncia o que começa no ponto n: os níveis que mudaram de
+   uma vez só, sob o contexto que já vinha de trás. */
+function pintarAbertura(n){
+  page.classList.remove("fade"); void page.offsetWidth; page.classList.add("fade");
+  const ab = MAN.aberturas[n];
+
+  const contexto = ab.contexto.length
+    ? `<div class="contexto">${ab.contexto.map(t => `<span>${t}</span>`).join("")}</div>`
+    : "";
+
+  const niveis = ab.novos.map(x => `
+    <div class="nivel ${x.nivel}">
+      ${x.rotulo ? `<div class="rotulo">${x.rotulo}</div>` : ``}
+      <div class="titulo">${x.titulo}</div>
+    </div>`).join(`<div class="elo"></div>`);
+
+  page.innerHTML = `
+    <div class="abertura">
+      ${contexto}
+      <div class="ornato"></div>
+      ${niveis}
+      <div class="adiante">Ponto ${n} em diante</div>
+    </div>`;
+
+  pintarNav(n > MAN.min ? { n: n - 1 } : null, { n: n });
+
+  jump.value = n;
+  document.title = `Catecismo · ${ab.novos[ab.novos.length - 1].titulo}`;
+  window.scrollTo(0, 0);
+}
+
 function pintar(n, d){
   page.classList.remove("fade"); void page.offsetWidth; page.classList.add("fade");
 
@@ -100,20 +151,24 @@ function pintar(n, d){
         </div>`).join("")}
     </section>` : "";
 
+  /* O subtítulo marginal não tem página própria: encabeça o primeiro ponto
+     a que pertence, para não passar despercebido. */
+  const sub = MAN.subtitulos && MAN.subtitulos[n];
+
   page.innerHTML = `
     <div class="trail">${trail}</div>
     <div class="numeral">${n}</div>
     <div class="rule"></div>
+    ${sub ? `<h2 class="subtitulo">${sub}</h2>` : ``}
     <div class="body">${d.body}</div>
     ${notas}`;
 
-  const prev = n > MAN.min ? n - 1 : null;
-  const next = n < MAN.max ? n + 1 : null;
-  nav.innerHTML =
-    `<a class="prev" href="#${prev ?? n}" ${prev ? "" : 'aria-disabled="true" tabindex="-1"'}>
-       <span class="dir">Anterior</span><span class="num">${prev ?? "—"}</span></a>
-     <a class="next" href="#${next ?? n}" ${next ? "" : 'aria-disabled="true" tabindex="-1"'}>
-       <span class="dir">Próximo</span><span class="num">${next ?? "—"}</span></a>`;
+  /* Atrás fica a abertura do próprio ponto, quando existe; adiante, a do
+     ponto seguinte, antes do texto dele. */
+  pintarNav(
+    temAbertura(n) ? { n: n, abertura: true }
+                   : (n > MAN.min ? { n: n - 1 } : null),
+    n < MAN.max ? { n: n + 1, abertura: temAbertura(n + 1) } : null);
 
   jump.value = n;
   document.title = `Catecismo · ${n}`;
@@ -138,6 +193,13 @@ async function render(){
     return aviso(`<p><strong>O ponto ${n} ainda não está neste site.</strong></p>
       <p>Por enquanto estão disponíveis os pontos ${MAN.min} a ${MAN.max}.</p>
       <p><a href="#${MAN.min}" style="color:var(--brass)">Voltar ao início</a></p>`);
+  }
+
+  /* A abertura sai do manifesto, que já está em mãos: não espera pelo texto. */
+  if (naAbertura() && temAbertura(n)) {
+    pintarAbertura(n);
+    carregar(b);                         // o texto chega enquanto se lê a abertura
+    return;
   }
 
   let dados;
@@ -168,9 +230,19 @@ jump.addEventListener("change", () => {
 });
 jump.addEventListener("keydown", e => { if (e.key === "Enter") jump.blur(); });
 
-const ir = d => {
-  const n = num() + d;
-  if (MAN && n >= MAN.min && n <= MAN.max) location.hash = String(n);
+/* Teclado e gesto seguem a mesma sequência dos botões: a abertura é uma
+   parada entre o ponto anterior e o primeiro ponto do novo tópico. */
+const ir = passo => {
+  if (!MAN) return;
+  const n = num();
+  const abertura = naAbertura() && temAbertura(n);
+  if (passo > 0) {
+    if (abertura)          location.hash = "#" + n;
+    else if (n < MAN.max)  location.hash = enderecoDe(n + 1);
+  } else {
+    if (!abertura && temAbertura(n)) location.hash = "#a" + n;
+    else if (n > MAN.min)            location.hash = "#" + (n - 1);
+  }
 };
 
 document.addEventListener("keydown", e => {
@@ -191,7 +263,9 @@ document.addEventListener("touchend", e => {
 }, { passive: true });
 
 window.addEventListener("hashchange", render);
-if (!location.hash) location.replace("#1"); else render();
+/* Quem chega sem endereço entra pela abertura do primeiro ponto; se ela não
+   existir, o render mostra o ponto em si. */
+if (!location.hash) location.replace("#a1"); else render();
 </script>
 </body>
 </html>

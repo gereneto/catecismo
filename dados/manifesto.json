@@ -38,5 +38,591 @@
    "ate": 184,
    "titulo": "A resposta do homem a Deus"
   }
- ]
+ ],
+ "aberturas": {
+  "1": {
+   "contexto": [],
+   "novos": [
+    {
+     "nivel": "parte",
+     "rotulo": null,
+     "titulo": "Prólogo"
+    },
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. A vida do homem — conhecer e amar a Deus"
+    }
+   ]
+  },
+  "4": {
+   "contexto": [
+    "Prólogo"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. Transmitir a fé — a catequese"
+    }
+   ]
+  },
+  "11": {
+   "contexto": [
+    "Prólogo"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. Finalidade e destinatários deste catecismo"
+    }
+   ]
+  },
+  "13": {
+   "contexto": [
+    "Prólogo"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "IV. Estrutura deste catecismo"
+    }
+   ]
+  },
+  "18": {
+   "contexto": [
+    "Prólogo"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "V. Indicações práticas para o uso deste catecismo"
+    }
+   ]
+  },
+  "23": {
+   "contexto": [
+    "Prólogo"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "VI. Adaptações necessárias"
+    }
+   ]
+  },
+  "26": {
+   "contexto": [],
+   "novos": [
+    {
+     "nivel": "parte",
+     "rotulo": "Primeira parte",
+     "titulo": "A profissão da fé"
+    },
+    {
+     "nivel": "secao",
+     "rotulo": "Primeira seção",
+     "titulo": "«Eu creio» — «Nós cremos»"
+    }
+   ]
+  },
+  "27": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»"
+   ],
+   "novos": [
+    {
+     "nivel": "capitulo",
+     "rotulo": "Capítulo primeiro",
+     "titulo": "O homem é «capaz» de Deus"
+    },
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. O desejo de Deus"
+    }
+   ]
+  },
+  "31": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo primeiro — O homem é «capaz» de Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. Os caminhos de acesso ao conhecimento de Deus"
+    }
+   ]
+  },
+  "36": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo primeiro — O homem é «capaz» de Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. O conhecimento de Deus segundo a Igreja"
+    }
+   ]
+  },
+  "39": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo primeiro — O homem é «capaz» de Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "IV. Como falar de Deus?"
+    }
+   ]
+  },
+  "44": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo primeiro — O homem é «capaz» de Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
+  },
+  "50": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»"
+   ],
+   "novos": [
+    {
+     "nivel": "capitulo",
+     "rotulo": "Capítulo segundo",
+     "titulo": "Deus ao encontro do homem"
+    }
+   ]
+  },
+  "51": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem"
+   ],
+   "novos": [
+    {
+     "nivel": "artigo",
+     "rotulo": "Artigo 1",
+     "titulo": "A Revelação de Deus"
+    },
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. Deus revela o seu «desígnio benevolente»"
+    }
+   ]
+  },
+  "54": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 1 — A Revelação de Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. As etapas da Revelação"
+    }
+   ]
+  },
+  "65": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 1 — A Revelação de Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. Jesus Cristo — «Mediador e plenitude de toda a Revelação»"
+    }
+   ]
+  },
+  "68": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 1 — A Revelação de Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
+  },
+  "74": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem"
+   ],
+   "novos": [
+    {
+     "nivel": "artigo",
+     "rotulo": "Artigo 2",
+     "titulo": "A transmissão da Revelação divina"
+    }
+   ]
+  },
+  "75": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 2 — A transmissão da Revelação divina"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. A Tradição apostólica"
+    }
+   ]
+  },
+  "80": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 2 — A transmissão da Revelação divina"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. A relação entre a Tradição e a Sagrada Escritura"
+    }
+   ]
+  },
+  "84": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 2 — A transmissão da Revelação divina"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. A interpretação da herança da fé"
+    }
+   ]
+  },
+  "96": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 2 — A transmissão da Revelação divina"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
+  },
+  "101": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem"
+   ],
+   "novos": [
+    {
+     "nivel": "artigo",
+     "rotulo": "Artigo 3",
+     "titulo": "A Sagrada Escritura"
+    },
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. Cristo — Palavra única da Escritura santa"
+    }
+   ]
+  },
+  "105": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 3 — A Sagrada Escritura"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. Inspiração e verdade da Sagrada Escritura"
+    }
+   ]
+  },
+  "109": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 3 — A Sagrada Escritura"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. O Espírito Santo, intérprete da Escritura"
+    }
+   ]
+  },
+  "120": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 3 — A Sagrada Escritura"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "IV. O Cânon das Escrituras"
+    }
+   ]
+  },
+  "131": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 3 — A Sagrada Escritura"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "V. A Sagrada Escritura na vida da Igreja"
+    }
+   ]
+  },
+  "134": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo segundo — Deus ao encontro do homem",
+    "Artigo 3 — A Sagrada Escritura"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
+  },
+  "142": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»"
+   ],
+   "novos": [
+    {
+     "nivel": "capitulo",
+     "rotulo": "Capítulo terceiro",
+     "titulo": "A resposta do homem a Deus"
+    }
+   ]
+  },
+  "144": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo terceiro — A resposta do homem a Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "artigo",
+     "rotulo": "Artigo 1",
+     "titulo": "Eu creio"
+    },
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. A «obediência da fé»"
+    }
+   ]
+  },
+  "150": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo terceiro — A resposta do homem a Deus",
+    "Artigo 1 — Eu creio"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. «Eu sei em quem pus a minha fé» (2Tm 1,12)"
+    }
+   ]
+  },
+  "153": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo terceiro — A resposta do homem a Deus",
+    "Artigo 1 — Eu creio"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. As características da fé"
+    }
+   ]
+  },
+  "166": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo terceiro — A resposta do homem a Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "artigo",
+     "rotulo": "Artigo 2",
+     "titulo": "Nós cremos"
+    }
+   ]
+  },
+  "168": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo terceiro — A resposta do homem a Deus",
+    "Artigo 2 — Nós cremos"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. «Olhai, Senhor, para a fé da vossa Igreja»"
+    }
+   ]
+  },
+  "170": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo terceiro — A resposta do homem a Deus",
+    "Artigo 2 — Nós cremos"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. A linguagem da fé"
+    }
+   ]
+  },
+  "172": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo terceiro — A resposta do homem a Deus",
+    "Artigo 2 — Nós cremos"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. Uma só fé"
+    }
+   ]
+  },
+  "176": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Primeira seção — «Eu creio» — «Nós cremos»",
+    "Capítulo terceiro — A resposta do homem a Deus",
+    "Artigo 2 — Nós cremos"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
+  }
+ },
+ "subtitulos": {
+  "14": "Primeira parte: A profissão da fé",
+  "15": "Segunda parte: Os sacramentos da fé",
+  "16": "Terceira parte: A vida da fé",
+  "17": "Quarta parte: A oração na vida da fé",
+  "25": "Acima de tudo — a caridade",
+  "54": "Desde a origem, Deus dá-se a conhecer",
+  "56": "A aliança com Noé",
+  "59": "Deus elege Abraão",
+  "62": "Deus forma o seu povo Israel",
+  "65": "No seu Verbo, Deus disse tudo",
+  "66": "Já não haverá outra Revelação",
+  "76": "A pregação apostólica…",
+  "77": "…continuada na sucessão apostólica",
+  "80": "Uma fonte comum…",
+  "81": "…duas formas de transmissão distintas",
+  "83": "Tradição apostólica e tradições eclesiais",
+  "84": "A herança da fé confiada à totalidade da Igreja",
+  "85": "O Magistério da Igreja",
+  "88": "Os dogmas da fé",
+  "91": "O sentido sobrenatural da fé",
+  "94": "O crescimento na inteligência da fé",
+  "115": "Os sentidos da Escritura",
+  "121": "O Antigo Testamento",
+  "124": "O Novo Testamento",
+  "128": "A unidade do Antigo e do Novo Testamento",
+  "145": "Abraão, o pai de todos os crentes",
+  "148": "Maria, feliz aquela que acreditou",
+  "150": "Crer só em Deus",
+  "151": "Crer em Jesus Cristo, Filho de Deus",
+  "152": "Crer no Espírito Santo",
+  "153": "A fé é uma graça",
+  "154": "A fé é um ato humano",
+  "156": "A fé e a inteligência",
+  "160": "A liberdade da fé",
+  "161": "A necessidade da fé",
+  "162": "A perseverança na fé",
+  "163": "A fé, vida eterna iniciada"
+ }
 }
