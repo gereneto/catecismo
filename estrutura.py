@@ -21,10 +21,14 @@ import sys
 AQUI = os.path.dirname(os.path.abspath(__file__))
 DADOS = os.path.join(AQUI, "dados")
 
-# Os seis níveis, do mais amplo ao mais estreito. O último — o subtítulo
+# Os níveis, do mais amplo ao mais estreito. O último — o subtítulo
 # marginal — vem colado ao tópico na trilha, separado por " · ".
-NIVEIS = ["parte", "secao", "capitulo", "artigo", "topico", "subtitulo"]
+NIVEIS = ["parte", "secao", "capitulo", "artigo", "paragrafo", "topico",
+          "subtitulo"]
 SUBTITULO = NIVEIS.index("subtitulo")
+TOPICO = NIVEIS.index("topico")
+# Até o parágrafo, o título traz um rótulo próprio ("Artigo 1 — …").
+COM_ROTULO = NIVEIS.index("paragrafo")
 
 ORDINAIS = "Primeira|Segunda|Terceira|Quarta|Quinta|Sexta"
 
@@ -41,23 +45,25 @@ def nivel(titulo):
         return 2
     if re.match(r"^Artigo\b", titulo):
         return 3
-    return 4                      # "I. ...", "Resumindo" e afins
+    if re.match(r"^Parágrafo\b", titulo):
+        return 4
+    return TOPICO                 # "I. ...", "Resumindo" e afins
 
 
 def partir(titulo, n):
     """Separa "Capítulo primeiro — O homem…" em rótulo e título.
 
-    Só os níveis com nome próprio (parte, seção, capítulo, artigo) trazem
-    esse rótulo; nos tópicos o texto vale inteiro.
+    Só os níveis com nome próprio (parte, seção, capítulo, artigo,
+    parágrafo) trazem esse rótulo; nos tópicos o texto vale inteiro.
     """
-    if n <= 3 and " — " in titulo:
+    if n <= COM_ROTULO and " — " in titulo:
         rotulo, resto = titulo.split(" — ", 1)
         return rotulo, resto
     return None, titulo
 
 
 def hierarquia(pontos):
-    """Devolve, para cada ponto, a hierarquia completa em seis níveis."""
+    """Devolve, para cada ponto, a hierarquia completa em todos os níveis."""
     completo = {}
     anterior = [None] * len(NIVEIS)
     for n in sorted(pontos):
@@ -67,10 +73,10 @@ def hierarquia(pontos):
         for t in pontos[n]:
             k = nivel(t)
             if " · " in t:
-                if k != 4:
+                if k != TOPICO:
                     sys.exit("ponto %d: separador · fora de um tópico: %r" % (n, t))
                 topico, sub = t.split(" · ", 1)
-                entradas.append((4, topico))
+                entradas.append((TOPICO, topico))
                 entradas.append((SUBTITULO, sub))
             else:
                 entradas.append((k, t))

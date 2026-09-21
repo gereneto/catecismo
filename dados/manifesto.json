@@ -1,6 +1,6 @@
 {
  "min": 1,
- "max": 184,
+ "max": 231,
  "blocos": [
   {
    "file": "prologo.json",
@@ -37,6 +37,18 @@
    "de": 142,
    "ate": 184,
    "titulo": "A resposta do homem a Deus"
+  },
+  {
+   "file": "p1s2.json",
+   "de": 185,
+   "ate": 197,
+   "titulo": "Os Símbolos da fé"
+  },
+  {
+   "file": "p1s2c1a1p1.json",
+   "de": 198,
+   "ate": 231,
+   "titulo": "Creio em Deus"
   }
  ],
  "aberturas": {
@@ -584,6 +596,135 @@
      "titulo": "Resumindo"
     }
    ]
+  },
+  "185": {
+   "contexto": [
+    "Primeira parte — A profissão da fé"
+   ],
+   "novos": [
+    {
+     "nivel": "secao",
+     "rotulo": "Segunda seção",
+     "titulo": "A profissão da fé cristã"
+    },
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Os Símbolos da fé"
+    }
+   ]
+  },
+  "198": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã"
+   ],
+   "novos": [
+    {
+     "nivel": "capitulo",
+     "rotulo": "Capítulo primeiro",
+     "titulo": "Creio em Deus Pai"
+    }
+   ]
+  },
+  "199": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai"
+   ],
+   "novos": [
+    {
+     "nivel": "artigo",
+     "rotulo": "Artigo 1",
+     "titulo": "«Creio em Deus Pai todo-poderoso, criador do céu e da terra»"
+    },
+    {
+     "nivel": "paragrafo",
+     "rotulo": "Parágrafo 1",
+     "titulo": "Creio em Deus"
+    }
+   ]
+  },
+  "200": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 1 — Creio em Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. «Creio em um só Deus»"
+    }
+   ]
+  },
+  "203": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 1 — Creio em Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. Deus revela o seu nome"
+    }
+   ]
+  },
+  "214": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 1 — Creio em Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. Deus, «Aquele que é», é verdade e amor"
+    }
+   ]
+  },
+  "222": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 1 — Creio em Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "IV. Consequências da fé no Deus Único"
+    }
+   ]
+  },
+  "228": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 1 — Creio em Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
   }
  },
  "subtitulos": {
@@ -623,6 +764,12 @@
   "160": "A liberdade da fé",
   "161": "A necessidade da fé",
   "162": "A perseverança na fé",
-  "163": "A fé, vida eterna iniciada"
+  "163": "A fé, vida eterna iniciada",
+  "205": "O Deus vivo",
+  "206": "«Eu sou Aquele que sou»",
+  "210": "«Deus de ternura e de piedade»",
+  "212": "Só Deus é",
+  "215": "Deus é a verdade",
+  "218": "Deus é amor"
  }
 }
