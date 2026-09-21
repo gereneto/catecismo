@@ -1,6 +1,6 @@
 {
  "min": 1,
- "max": 267,
+ "max": 324,
  "blocos": [
   {
    "file": "prologo.json",
@@ -55,6 +55,18 @@
    "de": 232,
    "ate": 267,
    "titulo": "O Pai"
+  },
+  {
+   "file": "p1s2c1a1p3.json",
+   "de": 268,
+   "ate": 278,
+   "titulo": "O Todo-Poderoso"
+  },
+  {
+   "file": "p1s2c1a1p4.json",
+   "de": 279,
+   "ate": 324,
+   "titulo": "O Criador"
   }
  ],
  "aberturas": {
@@ -815,6 +827,148 @@
      "titulo": "Resumindo"
     }
    ]
+  },
+  "268": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»"
+   ],
+   "novos": [
+    {
+     "nivel": "paragrafo",
+     "rotulo": "Parágrafo 3",
+     "titulo": "O Todo-Poderoso"
+    }
+   ]
+  },
+  "275": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 3 — O Todo-Poderoso"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
+  },
+  "279": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»"
+   ],
+   "novos": [
+    {
+     "nivel": "paragrafo",
+     "rotulo": "Parágrafo 4",
+     "titulo": "O Criador"
+    }
+   ]
+  },
+  "282": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 4 — O Criador"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. A catequese sobre a criação"
+    }
+   ]
+  },
+  "290": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 4 — O Criador"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. A criação — obra da Santíssima Trindade"
+    }
+   ]
+  },
+  "293": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 4 — O Criador"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. «O mundo foi criado para glória de Deus»"
+    }
+   ]
+  },
+  "295": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 4 — O Criador"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "IV. O mistério da criação"
+    }
+   ]
+  },
+  "302": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 4 — O Criador"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "V. Deus realiza o seu desígnio: a divina Providência"
+    }
+   ]
+  },
+  "315": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 4 — O Criador"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
   }
  },
  "subtitulos": {
@@ -864,6 +1018,16 @@
   "238": "O Pai revelado pelo Filho",
   "243": "O Pai e o Filho revelados pelo Espírito",
   "249": "A formação do dogma trinitário",
-  "253": "O dogma da Santíssima Trindade"
+  "253": "O dogma da Santíssima Trindade",
+  "269": "«Faz tudo quanto lhe apraz» (Sl 115,3)",
+  "270": "«Porque podeis tudo, de todos vos compadeceis» (Sb 11,23)",
+  "272": "O mistério da aparente impotência de Deus",
+  "295": "Deus cria com sabedoria e por amor",
+  "296": "Deus cria «do nada»",
+  "299": "Deus cria um mundo ordenado e bom",
+  "300": "Deus transcende a criação e está presente nela",
+  "301": "Deus sustenta e conduz a criação",
+  "306": "A Providência e as causas segundas",
+  "309": "A Providência e o escândalo do mal"
  }
 }

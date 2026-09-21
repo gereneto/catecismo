@@ -73,10 +73,12 @@ def hierarquia(pontos):
         for t in pontos[n]:
             k = nivel(t)
             if " · " in t:
-                if k != TOPICO:
-                    sys.exit("ponto %d: separador · fora de um tópico: %r" % (n, t))
-                topico, sub = t.split(" · ", 1)
-                entradas.append((TOPICO, topico))
+                # O subtítulo marginal costuma pender de um tópico numerado,
+                # mas num parágrafo sem tópicos pende direto do parágrafo.
+                if k >= SUBTITULO:
+                    sys.exit("ponto %d: separador · num nível sem subtítulo: %r" % (n, t))
+                acima, sub = t.split(" · ", 1)
+                entradas.append((k, acima))
                 entradas.append((SUBTITULO, sub))
             else:
                 entradas.append((k, t))
