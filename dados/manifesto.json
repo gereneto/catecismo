@@ -1,6 +1,6 @@
 {
  "min": 1,
- "max": 231,
+ "max": 267,
  "blocos": [
   {
    "file": "prologo.json",
@@ -49,6 +49,12 @@
    "de": 198,
    "ate": 231,
    "titulo": "Creio em Deus"
+  },
+  {
+   "file": "p1s2c1a1p2.json",
+   "de": 232,
+   "ate": 267,
+   "titulo": "O Pai"
   }
  ],
  "aberturas": {
@@ -725,6 +731,90 @@
      "titulo": "Resumindo"
     }
    ]
+  },
+  "232": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»"
+   ],
+   "novos": [
+    {
+     "nivel": "paragrafo",
+     "rotulo": "Parágrafo 2",
+     "titulo": "O Pai"
+    },
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. «Em nome do Pai e do Filho e do Espírito Santo»"
+    }
+   ]
+  },
+  "238": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 2 — O Pai"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. A revelação de Deus como Trindade"
+    }
+   ]
+  },
+  "249": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 2 — O Pai"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. A Santíssima Trindade na doutrina da fé"
+    }
+   ]
+  },
+  "257": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 2 — O Pai"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "IV. As obras divinas e as missões trinitárias"
+    }
+   ]
+  },
+  "261": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 2 — O Pai"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
   }
  },
  "subtitulos": {
@@ -770,6 +860,10 @@
   "210": "«Deus de ternura e de piedade»",
   "212": "Só Deus é",
   "215": "Deus é a verdade",
-  "218": "Deus é amor"
+  "218": "Deus é amor",
+  "238": "O Pai revelado pelo Filho",
+  "243": "O Pai e o Filho revelados pelo Espírito",
+  "249": "A formação do dogma trinitário",
+  "253": "O dogma da Santíssima Trindade"
  }
 }
