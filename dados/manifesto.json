@@ -1,6 +1,6 @@
 {
  "min": 1,
- "max": 324,
+ "max": 384,
  "blocos": [
   {
    "file": "prologo.json",
@@ -67,6 +67,18 @@
    "de": 279,
    "ate": 324,
    "titulo": "O Criador"
+  },
+  {
+   "file": "p1s2c1a1p5.json",
+   "de": 325,
+   "ate": 354,
+   "titulo": "O céu e a terra"
+  },
+  {
+   "file": "p1s2c1a1p6.json",
+   "de": 355,
+   "ate": 384,
+   "titulo": "O homem"
   }
  ],
  "aberturas": {
@@ -969,6 +981,164 @@
      "titulo": "Resumindo"
     }
    ]
+  },
+  "325": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»"
+   ],
+   "novos": [
+    {
+     "nivel": "paragrafo",
+     "rotulo": "Parágrafo 5",
+     "titulo": "O céu e a terra"
+    }
+   ]
+  },
+  "328": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 5 — O céu e a terra"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. Os anjos"
+    }
+   ]
+  },
+  "337": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 5 — O céu e a terra"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. O mundo visível"
+    }
+   ]
+  },
+  "350": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 5 — O céu e a terra"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
+  },
+  "355": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»"
+   ],
+   "novos": [
+    {
+     "nivel": "paragrafo",
+     "rotulo": "Parágrafo 6",
+     "titulo": "O homem"
+    }
+   ]
+  },
+  "356": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 6 — O homem"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. «A imagem de Deus»"
+    }
+   ]
+  },
+  "362": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 6 — O homem"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. «Corpore et anima unus» — unidade de corpo e alma"
+    }
+   ]
+  },
+  "369": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 6 — O homem"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. «Homem e mulher os criou»"
+    }
+   ]
+  },
+  "374": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 6 — O homem"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "IV. O homem no paraíso"
+    }
+   ]
+  },
+  "380": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 6 — O homem"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
   }
  },
  "subtitulos": {
@@ -1028,6 +1198,12 @@
   "300": "Deus transcende a criação e está presente nela",
   "301": "Deus sustenta e conduz a criação",
   "306": "A Providência e as causas segundas",
-  "309": "A Providência e o escândalo do mal"
+  "309": "A Providência e o escândalo do mal",
+  "328": "A existência dos anjos, uma verdade de fé",
+  "329": "Quem são os anjos?",
+  "331": "Cristo «com todos os seus anjos»",
+  "334": "Os anjos na vida da Igreja",
+  "369": "Igualdade e diferença queridas por Deus",
+  "371": "«Um para o outro» — «uma unidade a dois»"
  }
 }
