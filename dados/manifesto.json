@@ -1,6 +1,6 @@
 {
  "min": 1,
- "max": 455,
+ "max": 483,
  "blocos": [
   {
    "file": "prologo.json",
@@ -91,6 +91,12 @@
    "de": 422,
    "ate": 455,
    "titulo": "Creio em Jesus Cristo, Filho Único de Deus"
+  },
+  {
+   "file": "p1s2c2a3p1.json",
+   "de": 456,
+   "ate": 483,
+   "titulo": "O Filho de Deus fez-se homem"
   }
  ],
  "aberturas": {
@@ -1338,6 +1344,94 @@
      "titulo": "Resumindo"
     }
    ]
+  },
+  "456": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo segundo — Creio em Jesus Cristo, Filho Único de Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "artigo",
+     "rotulo": "Artigo 3",
+     "titulo": "«Jesus Cristo foi concebido pelo poder do Espírito Santo e nasceu da Virgem Maria»"
+    },
+    {
+     "nivel": "paragrafo",
+     "rotulo": "Parágrafo 1",
+     "titulo": "O Filho de Deus fez-se homem"
+    },
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. Por que é que o Verbo encarnou?"
+    }
+   ]
+  },
+  "461": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo segundo — Creio em Jesus Cristo, Filho Único de Deus",
+    "Artigo 3 — «Jesus Cristo foi concebido pelo poder do Espírito Santo e nasceu da Virgem Maria»",
+    "Parágrafo 1 — O Filho de Deus fez-se homem"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. A Encarnação"
+    }
+   ]
+  },
+  "464": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo segundo — Creio em Jesus Cristo, Filho Único de Deus",
+    "Artigo 3 — «Jesus Cristo foi concebido pelo poder do Espírito Santo e nasceu da Virgem Maria»",
+    "Parágrafo 1 — O Filho de Deus fez-se homem"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. Verdadeiro Deus e verdadeiro homem"
+    }
+   ]
+  },
+  "470": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo segundo — Creio em Jesus Cristo, Filho Único de Deus",
+    "Artigo 3 — «Jesus Cristo foi concebido pelo poder do Espírito Santo e nasceu da Virgem Maria»",
+    "Parágrafo 1 — O Filho de Deus fez-se homem"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "IV. Como é que o Filho de Deus é homem"
+    }
+   ]
+  },
+  "479": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo segundo — Creio em Jesus Cristo, Filho Único de Deus",
+    "Artigo 3 — «Jesus Cristo foi concebido pelo poder do Espírito Santo e nasceu da Virgem Maria»",
+    "Parágrafo 1 — O Filho de Deus fez-se homem"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
   }
  },
  "subtitulos": {
@@ -1413,6 +1507,10 @@
   "407": "Um duro combate",
   "422": "A Boa-Nova: Deus enviou o seu Filho",
   "425": "«Anunciar a insondável riqueza de Cristo» (Ef 3,8)",
-  "426": "No coração da catequese: Cristo"
+  "426": "No coração da catequese: Cristo",
+  "471": "A alma e o conhecimento humano de Cristo",
+  "475": "A vontade humana de Cristo",
+  "476": "O verdadeiro corpo de Cristo",
+  "478": "O coração do Verbo encarnado"
  }
 }
