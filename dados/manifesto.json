@@ -1,6 +1,6 @@
 {
  "min": 1,
- "max": 384,
+ "max": 421,
  "blocos": [
   {
    "file": "prologo.json",
@@ -79,6 +79,12 @@
    "de": 355,
    "ate": 384,
    "titulo": "O homem"
+  },
+  {
+   "file": "p1s2c1a1p7.json",
+   "de": 385,
+   "ate": 421,
+   "titulo": "A queda"
   }
  ],
  "aberturas": {
@@ -1139,6 +1145,101 @@
      "titulo": "Resumindo"
     }
    ]
+  },
+  "385": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»"
+   ],
+   "novos": [
+    {
+     "nivel": "paragrafo",
+     "rotulo": "Parágrafo 7",
+     "titulo": "A queda"
+    }
+   ]
+  },
+  "386": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 7 — A queda"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. «Onde abundou o pecado, sobreabundou a graça»"
+    }
+   ]
+  },
+  "391": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 7 — A queda"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. A queda dos anjos"
+    }
+   ]
+  },
+  "396": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 7 — A queda"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. O pecado original"
+    }
+   ]
+  },
+  "410": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 7 — A queda"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "IV. «Vós não o abandonastes ao poder da morte»"
+    }
+   ]
+  },
+  "413": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo primeiro — Creio em Deus Pai",
+    "Artigo 1 — «Creio em Deus Pai todo-poderoso, criador do céu e da terra»",
+    "Parágrafo 7 — A queda"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
   }
  },
  "subtitulos": {
@@ -1204,6 +1305,13 @@
   "331": "Cristo «com todos os seus anjos»",
   "334": "Os anjos na vida da Igreja",
   "369": "Igualdade e diferença queridas por Deus",
-  "371": "«Um para o outro» — «uma unidade a dois»"
+  "371": "«Um para o outro» — «uma unidade a dois»",
+  "386": "A realidade do pecado",
+  "388": "O pecado original, uma verdade fundamental da fé",
+  "390": "Para ler a narrativa da queda",
+  "396": "A prova da liberdade",
+  "397": "O primeiro pecado do homem",
+  "402": "Consequências do pecado de Adão para a humanidade",
+  "407": "Um duro combate"
  }
 }
