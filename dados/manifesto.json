@@ -1,6 +1,6 @@
 {
  "min": 1,
- "max": 421,
+ "max": 455,
  "blocos": [
   {
    "file": "prologo.json",
@@ -85,6 +85,12 @@
    "de": 385,
    "ate": 421,
    "titulo": "A queda"
+  },
+  {
+   "file": "p1s2c2a2.json",
+   "de": 422,
+   "ate": 455,
+   "titulo": "Creio em Jesus Cristo, Filho Único de Deus"
   }
  ],
  "aberturas": {
@@ -1240,6 +1246,98 @@
      "titulo": "Resumindo"
     }
    ]
+  },
+  "422": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã"
+   ],
+   "novos": [
+    {
+     "nivel": "capitulo",
+     "rotulo": "Capítulo segundo",
+     "titulo": "Creio em Jesus Cristo, Filho Único de Deus"
+    }
+   ]
+  },
+  "430": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo segundo — Creio em Jesus Cristo, Filho Único de Deus"
+   ],
+   "novos": [
+    {
+     "nivel": "artigo",
+     "rotulo": "Artigo 2",
+     "titulo": "«E em Jesus Cristo, seu único Filho, nosso Senhor»"
+    },
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "I. Jesus"
+    }
+   ]
+  },
+  "436": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo segundo — Creio em Jesus Cristo, Filho Único de Deus",
+    "Artigo 2 — «E em Jesus Cristo, seu único Filho, nosso Senhor»"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "II. Cristo"
+    }
+   ]
+  },
+  "441": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo segundo — Creio em Jesus Cristo, Filho Único de Deus",
+    "Artigo 2 — «E em Jesus Cristo, seu único Filho, nosso Senhor»"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "III. Filho único de Deus"
+    }
+   ]
+  },
+  "446": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo segundo — Creio em Jesus Cristo, Filho Único de Deus",
+    "Artigo 2 — «E em Jesus Cristo, seu único Filho, nosso Senhor»"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "IV. Senhor"
+    }
+   ]
+  },
+  "452": {
+   "contexto": [
+    "Primeira parte — A profissão da fé",
+    "Segunda seção — A profissão da fé cristã",
+    "Capítulo segundo — Creio em Jesus Cristo, Filho Único de Deus",
+    "Artigo 2 — «E em Jesus Cristo, seu único Filho, nosso Senhor»"
+   ],
+   "novos": [
+    {
+     "nivel": "topico",
+     "rotulo": null,
+     "titulo": "Resumindo"
+    }
+   ]
   }
  },
  "subtitulos": {
@@ -1312,6 +1410,9 @@
   "396": "A prova da liberdade",
   "397": "O primeiro pecado do homem",
   "402": "Consequências do pecado de Adão para a humanidade",
-  "407": "Um duro combate"
+  "407": "Um duro combate",
+  "422": "A Boa-Nova: Deus enviou o seu Filho",
+  "425": "«Anunciar a insondável riqueza de Cristo» (Ef 3,8)",
+  "426": "No coração da catequese: Cristo"
  }
 }
